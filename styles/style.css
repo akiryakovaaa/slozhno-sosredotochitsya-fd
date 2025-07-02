@@ -1,29 +1,29 @@
 .page {
+  display: grid;
   height: 100vh;
   min-height: 1024px;
-  display: grid;
   gap: 40px;
   background-color: #fff1f7;
   background-image: var(--bg-image);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-}
+  }
 
 .header {
-  height: 668px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 238px auto 1fr;
+  height: 668px;
   padding: 0 10px;
 }
 
 .text-focus {
+  color: var(--text-focus-color);
   font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
-  color: var(--text-focus-color);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -32,13 +32,13 @@
 }
 
 .header-text {
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 66px;
   font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight);
   font-size: var(--font-size-title);
   line-height: var(--line-height-title);
-  align-self: end;
-  justify-self: center;
-  margin-bottom: 66px;
 }
 
 .title-decor {
@@ -50,10 +50,10 @@
   position: absolute;
   top: 10px;
   right: 10px;
+  margin-right: 10px;
+  color: var(--accent-color);
   font-family: var(--font-family), sans-serif;
   font-size: var(--font-size-title);
-  color: var(--accent-color);
-  margin-right: 10px;
 }
 
 .rec::after {
@@ -61,9 +61,9 @@
   display: inline-block;
   width: 9px;
   height: 9px;
+  margin-left: 10px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  margin-left: 10px;
   box-shadow: 0 0 4px 4px var(--accent-color);
 }
 
@@ -88,17 +88,17 @@
 .decorated-zone::before {
   top: 0;
   right: 0;
-  border-width: 1px 1px 0 0;
   margin-top: 10px;
   margin-right: 10px;
+  border-width: 1px 1px 0 0;
 }
 
 .decorated-zone::after {
   bottom: 0;
   left: 0;
-  border-width: 0 0 1px 1px;
   margin-bottom: 10px;
   margin-left: 10px;
+  border-width: 0 0 1px 1px;
 }
 
 .header__theme-menu {
@@ -108,18 +108,18 @@
 }
 
 .header__theme-menu-button {
+  height: 26px;
+  width: 70px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  color: var(--text-menu);
   font-family: var(--font-family), sans-serif;
   font-weight: 400;
   font-size: var(--font-size-title);
   line-height: 18px;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  color: var(--text-menu);
-  cursor: pointer;
   text-transform: lowercase;
-  height: 26px;
-  width: 70px;
 }
 
 .header__theme-menu-list {
@@ -142,9 +142,9 @@
 }
 
 .main {
-  padding: 0 10px;
   display: grid;
   gap: 50px;
+  padding: 0 10px;
 }
 
 .section-two-columns {
@@ -158,19 +158,19 @@
 }
 
 .main-title {
+  color: var(--text-section);
   font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight);
   font-size: var(--font-size-title);
   line-height: var(--line-height-title);
-  color: var(--text-section);
 }
 
 .main-title-point {
+  color: var(--text-section-paragraph);
   font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight);
   font-size: var(--font-size-title);
   line-height: var(--line-height-title);
-  color: var(--text-section);
 }
 
 .main-paragraph {
@@ -183,12 +183,20 @@
   gap: 10px;
 }
 
-.main-text {
+.main-point-text {
+  color: var(--text-section-paragraph);
   font-family: var(--font-family), sans-serif;
   font-weight: 400;
   font-size: var(--font-size-title);
   line-height: var(--line-height-title);
+}
+
+.main-text {
   color: var(--text-main);
+  font-family: var(--font-family), sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
 }
 
 .main-link{
@@ -212,20 +220,20 @@
 
 .gallery {
   display: grid;
-  gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
 }
 
 .gallery img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .footer {
-  height: 668px;
   display: grid;
+  height: 668px;
 }
 
 .footer-text-focus {
@@ -239,16 +247,16 @@
   }
 
   .header {
-    height: 1024px;
     grid-template-rows: 463px auto 1fr;
+    height: 1024px;
     padding: 0 20px 0 0;
   }
 
   .header-text {
     align-self: end;
     justify-self: end;
-    margin-bottom: 183px;
     width: 364px;
+    margin-bottom: 183px;
   }
 
   .text-focus {
@@ -313,16 +321,16 @@
 
 @media (width >= 1024px){
   .header {
-    height: 768px;
     grid-template-rows: 319px auto 1fr;
+    height: 768px;
     padding: 0;
   }
 
   .header-text {
     align-self: end;
     justify-self: end;
-    margin-bottom: 134px;
     width: 491px;
+    margin-bottom: 134px;
     margin-right: 20px;
   }
 
@@ -333,8 +341,8 @@
 
   .header__theme-menu-list {
     display: flex;
-    margin-top: 20px;
     gap: 10px;
+    margin-top: 20px;
   }
 
   .main-title {
