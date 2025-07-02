@@ -133,7 +133,7 @@
 }
 
 .header__theme-menu-button:hover {
-   border: 1px solid rgba(var(--text-menu-rgb), 0.4);
+  border: 1px solid rgba(var(--text-menu-rgb));
 }
 
 .header__theme-menu-button:focus-visible {

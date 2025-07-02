@@ -3,7 +3,7 @@
   --accent-color: #FF8DCB;
   --text-focus-color: #FFC2E6;
   --text-menu: #353430;
-  --text-menu-rgb: 53, 52, 48;
+  --text-menu-rgb: rgba(53, 52, 48, 0.4);
   --text-header: #353430;
   --text-section: #353430;
   --text-section-paragraph: #353430;
