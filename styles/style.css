@@ -44,6 +44,7 @@
 .title-decor {
   color: var(--text-header);
   background-color: var(--accent-color);
+  display: inline-block;
 }
 
 .rec {
@@ -141,6 +142,73 @@
   border-bottom: 1px solid var(--text-menu);
 }
 
+.main {
+  /*height: 5354px;*/
+  padding: 0 10px;
+  display: grid;
+  gap: 50px;
+}
+
+.main-title {
+  font-family: var(--font-family), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  color: var(--text-section);
+}
+
+.section-two-columns {
+  display: grid;
+  gap: 20px;
+}
+
+.main-paragraph {
+  display: grid;
+  gap: 20px;
+}
+
+.main-point {
+  display: grid;
+  gap: 10px;
+}
+
+.main-text {
+  font-family: var(--font-family), sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  color: var(--text-main);
+}
+
+.main-link{
+  text-shadow:2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.main-link:hover {
+  border-bottom: 1px solid var(--text-main);
+}
+
+.main-link:focus-visible {
+  outline: 1px solid var(--text-main);
+  outline-offset: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -187,7 +255,12 @@
   .header__theme-menu {
     margin-top: 192px;
   }
+
+
 }
+
+
+
 
 
 

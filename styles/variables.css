@@ -5,10 +5,12 @@
   --text-menu: #353430;
   --text-menu-rgb: 53, 52, 48;
   --text-header: #353430;
-  --text-section: #353430;
+
+  --text-section-title: #353430;
   --text-section-paragraph: #353430;
   --text-section-paragraph-highlight: #FF8DCB;
   --text-main: #353430;
+  
   --font-family: IBM Plex Mono; 
   --font-weight: 700;
   --font-size-title: 18px;
