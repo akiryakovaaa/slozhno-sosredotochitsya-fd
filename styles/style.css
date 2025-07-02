@@ -142,7 +142,6 @@
 }
 
 .main {
-  /*height: 5354px;*/
   padding: 0 10px;
   display: grid;
   gap: 50px;
@@ -206,26 +205,33 @@
   outline-offset: 1px;
 }
 
+.pictures {
+  display: grid;
+  gap: 10px;
+}
 
+.gallery {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
 
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
+.footer {
+  height: 668px;
+  display: grid;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-text-focus {
+  align-self: center;
+  justify-self: center;
+}
 
 @media (width >= 768px) {
   .page {
@@ -269,7 +275,6 @@
   }
 
   .main {
-    /*height: 3682px;*/
     padding: 0 20px;
     gap: 80px;
   }
@@ -282,21 +287,29 @@
     width: 236px;
   }
  
+  .pictures {
+    gap: 20px;
+  }
 
+  .gallery {
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "sunset sunset icecream"
+      "cassette books icecream"
+      "cassette street street";
+  }
+  .gallery img:nth-child(1) { grid-area: sunset; }
+  .gallery img:nth-child(2) { grid-area: icecream; }
+  .gallery img:nth-child(3) { grid-area: cassette; }
+  .gallery img:nth-child(4) { grid-area: books; }
+  .gallery img:nth-child(5) { grid-area: street; }
 
-
-
-
-
-
+  .footer {
+    height: 1024px;
+  }
 }
-
-
-
-
-
-
-
 
 @media (width >= 1024px){
   .header {
@@ -324,12 +337,8 @@
     gap: 10px;
   }
 
-  .main {
-    /*height: 3352px;*/
-  }
-
   .main-title {
-      width: 315px;
+    width: 315px;
   }
  
   .section-three-columns .main-paragraph {
@@ -344,4 +353,11 @@
     margin-bottom: 10px;
   }
 
+  .footer {
+    height: 768px;
+  }
+
+  .pictures .main-title {
+    width: auto;
+  }
 }
