@@ -44,7 +44,6 @@
 .title-decor {
   color: var(--text-header);
   background-color: var(--accent-color);
-  display: inline-block;
 }
 
 .rec {
@@ -333,5 +332,16 @@
       width: 315px;
   }
  
+  .section-three-columns .main-paragraph {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-three-columns .main-point {
+    display: block;
+  }
+
+  .section-three-columns .main-title-point {
+    margin-bottom: 10px;
+  }
 
 }
