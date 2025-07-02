@@ -308,24 +308,25 @@
       "cassette books icecream"
       "cassette street street";
   }
-  .gallery img:nth-child(1) { 
-    grid-area: sunset; 
+
+  .gallery img:nth-child(1) {
+    grid-area: sunset;
   }
   
-  .gallery img:nth-child(2) { 
-    grid-area: icecream; 
+  .gallery img:nth-child(2) {
+    grid-area: icecream;
   }
 
-  .gallery img:nth-child(3) { 
-    grid-area: cassette; 
+  .gallery img:nth-child(3) {
+    grid-area: cassette;
   }
 
-  .gallery img:nth-child(4) { 
-    grid-area: books; 
+  .gallery img:nth-child(4) {
+    grid-area: books;
   }
 
-  .gallery img:nth-child(5) { 
-    grid-area: street; 
+  .gallery img:nth-child(5) {
+    grid-area: street;
   }
 
   .footer {
@@ -333,8 +334,7 @@
   }
 }
 
-@media (width >= 1024px)
-{
+@media (width >= 1024px) {
   .header {
     grid-template-rows: 319px auto 1fr;
     height: 768px;
