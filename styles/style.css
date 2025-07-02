@@ -149,17 +149,17 @@
   gap: 50px;
 }
 
+.section-two-columns {
+  display: grid;
+  gap: 20px;
+}
+
 .main-title {
   font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight);
   font-size: var(--font-size-title);
   line-height: var(--line-height-title);
   color: var(--text-section);
-}
-
-.section-two-columns {
-  display: grid;
-  gap: 20px;
 }
 
 .main-paragraph {
@@ -255,6 +255,24 @@
   .header__theme-menu {
     margin-top: 192px;
   }
+
+  .main {
+    /*height: 3682px;*/
+    padding: 0 20px;
+    gap: 80px;
+  }
+
+  .section-two-columns {
+    grid-template-columns: 1fr 2fr;
+  }
+
+
+ 
+
+
+
+
+
 
 
 }
