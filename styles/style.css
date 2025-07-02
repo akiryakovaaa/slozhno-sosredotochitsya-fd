@@ -162,6 +162,14 @@
   color: var(--text-section);
 }
 
+.main-title-point {
+  font-family: var(--font-family), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  color: var(--text-section);
+}
+
 .main-paragraph {
   display: grid;
   gap: 20px;
@@ -309,4 +317,10 @@
     margin-top: 20px;
     gap: 10px;
   }
+
+  .main {
+    /*height: 3352px;*/
+  }
+
+
 }
