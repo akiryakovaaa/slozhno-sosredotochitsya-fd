@@ -1,5 +1,221 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  height: 100vh;
+  min-height: 1024px;
+  display: grid;
+  gap: 40px;
+  background-color: #fff1f7;
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  height: 668px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 238px auto 1fr;
+  padding: 0 10px;
+}
+
+.text-focus {
+  font-family: var(--font-family), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--text-focus-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header-text-focus {
+  grid-row: 2;
+}
+
+.header-text {
+  font-family: var(--font-family), sans-serif;
+  font-weight: var(--font-weight);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 66px;
+}
+
+.title-decor {
+  color: var(--text-header);
+  background-color: var(--accent-color);
+}
+
+.rec {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: var(--font-family), sans-serif;
+  font-size: var(--font-size-title);
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+.rec::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  margin-left: 10px;
+  box-shadow: 0 0 4px 4px var(--accent-color);
+}
+
+.theme-auto .rec {
+  display: none;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-color: var(--text-menu);
+  border-style: solid;
+}
+
+.decorated-zone::before {
+  top: 0;
+  right: 0;
+  border-width: 1px 1px 0 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.decorated-zone::after {
+  bottom: 0;
+  left: 0;
+  border-width: 0 0 1px 1px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.header__theme-menu {
+  align-self: start;
+  justify-self: end;
+  margin-top: 75px;
+}
+
+.header__theme-menu-button {
+  font-family: var(--font-family), sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-title);
+  line-height: 18px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: var(--text-menu);
+  cursor: pointer;
+  text-transform: lowercase;
+  height: 26px;
+  width: 70px;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 9px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--text-menu);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+   border: 1px solid rgba(var(--text-menu-rgb), 0.4);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--text-menu);
+}
+
+
+
+
+
+
+
+@media (width >= 768px) {
+  .page {
+    gap: 60px;
+  }
+
+  .header {
+    height: 1024px;
+    grid-template-rows: 463px auto 1fr;
+    padding: 0 20px 0 0;
+  }
+
+  .header-text {
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 183px;
+    width: 364px;
+  }
+
+  .text-focus {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .rec {
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  .decorated-zone::before {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .decorated-zone::after {
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .header__theme-menu {
+    margin-top: 192px;
+  }
+}
+
+
+
+
+
+@media (width >= 1024px){
+  .header {
+    height: 768px;
+    grid-template-rows: 319px auto 1fr;
+    padding: 0;
+  }
+
+  .header-text {
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 134px;
+    width: 491px;
+    margin-right: 20px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    margin-top: 0px;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
 }
