@@ -61,7 +61,7 @@
   display: inline-block;
   width: 9px;
   height: 9px;
-  margin-left: 10px;
+  margin-left: 9px;
   background-color: var(--accent-color);
   border-radius: 50%;
   box-shadow: 0 0 4px 4px var(--accent-color);
@@ -364,6 +364,10 @@
     width: 315px;
   }
  
+  .section-two-columns {
+    gap: 10px;
+  }
+
   .section-three-columns .main-paragraph {
     grid-template-columns: repeat(3, 1fr);
   }
