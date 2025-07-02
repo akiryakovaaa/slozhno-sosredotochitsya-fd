@@ -154,6 +154,11 @@
   gap: 20px;
 }
 
+.section-three-columns {
+  display: grid;
+  gap: 20px;
+}
+
 .main-title {
   font-family: var(--font-family), sans-serif;
   font-weight: var(--font-weight);
@@ -274,7 +279,9 @@
     grid-template-columns: 1fr 2fr;
   }
 
-
+  .main-title {
+    width: 236px;
+  }
  
 
 
@@ -322,5 +329,9 @@
     /*height: 3352px;*/
   }
 
+  .main-title {
+      width: 315px;
+  }
+ 
 
 }
