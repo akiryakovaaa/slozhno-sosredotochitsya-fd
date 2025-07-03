@@ -18,3 +18,9 @@
 .theme-light .rec {
   display: none;
 }
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto .rec {
+    display: none;
+  }
+}
