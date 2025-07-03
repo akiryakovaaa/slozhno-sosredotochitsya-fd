@@ -3,7 +3,7 @@
   --accent-color: #FF0070;
   --text-focus-color: #DB00FF;
   --text-menu: #FF0070;
-  --text-menu-rgb: 255, 0, 112;
+  --text-menu-hover-color: #FF007066;
   --text-header: #000028;
   --text-section: #FF0070;
   --text-section-paragraph: #000028;
@@ -13,13 +13,6 @@
 
 .theme-dark .page {
   background-color: #000028;
-}
-
-.theme-light .header {
-  background-image: var(--bg-image);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,6 +27,10 @@
   --text-section-paragraph: #000028;
   --text-section-paragraph-highlight: #FF0070;
   --text-main: #F1B2CE;
+  }
+
+  .theme-auto .rec {
+    display: block; 
   }
 }
 
