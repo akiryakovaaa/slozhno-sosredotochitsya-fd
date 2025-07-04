@@ -160,6 +160,10 @@
   line-height: var(--line-height-title);
 }
 
+.main-title-point-thin {
+  font-weight: 400;
+}
+
 .main-paragraph {
   display: grid;
   gap: 20px;
@@ -168,10 +172,6 @@
 .main-point {
   display: grid;
   gap: 10px;
-}
-
-h4.main-title-point {
-  font-weight: 400;
 }
 
 .main-text {
